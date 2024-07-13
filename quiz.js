@@ -3,7 +3,7 @@ document.getElementById('submit-answer').addEventListener('click', checkAnswer) 
 // define function for checking the answer of the user
 function checkAnswer(){
     const correctAnswer = '4'; // store the correct answer
-    const selected = document.querySelector('input[name="quiz"]:checked');
+    let selected = document.querySelector("input[name='quiz']:checked");
     const userAnswer = selected.value;// extract the answer from the user
     if(userAnswer === correctAnswer){
         document.getElementById('feedback').textContent = 'Correct! Well done';
