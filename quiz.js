@@ -8,7 +8,7 @@ function checkAnswer(){
     let selected = document.querySelector("input[name='quiz']:checked");
     const userAnswer = selected.value;// extract the answer from the user
     if (userAnswer === correctAnswer){
-        document.getElementById('feedback').textContent = 'Correct! Well done';
+        document.getElementById('feedback').textContent = "Correct! Well done.";
     }
     else{
         document.getElementById('feedback').textContent = "That's incorrect. Try again!";
