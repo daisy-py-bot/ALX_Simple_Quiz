@@ -3,15 +3,13 @@
 function checkAnswer(){
     let correctAnswer = '4'; // store the correct answer
     let userAnswer = document.querySelector('input[name="quiz"]:checked').value // extract the answer from the user
-    if(correctAnswer == userAnswer){
+    if(userAnswer === correctAnswer){
         document.getElementById('feedback').textContent = 'Correct! Well done';
     }
     else{
-        document.getElementById('feedback').textContent = 'Incorrect! Try Again';
+        document.getElementById('feedback').textContent = "That's incorrect. Try again!";
     }
 
 }
 
-const btn = document.getElementById('submit-answer');
-
-btn.addEventListener('click', checkAnswer) // call the function when the submit button has been clickeds
+document.getElementById('submit-answer').addEventListener('click', checkAnswer) // call the function when the submit button has been clickeds
