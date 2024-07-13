@@ -1,8 +1,8 @@
 
 // define function for checking the answer of the user
 function checkAnswer(){
-    let correctAnswer = '4'; // store the correct answer
-    let userAnswer = document.querySelector('input[name="quiz"]:checked').value // extract the answer from the user
+    const correctAnswer = '4'; // store the correct answer
+    const userAnswer = document.querySelector('input[name="quiz"]:checked').value // extract the answer from the user
     if(userAnswer === correctAnswer){
         document.getElementById('feedback').textContent = 'Correct! Well done';
     }
